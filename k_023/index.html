@@ -9,25 +9,28 @@
 
 <script src="https://cdn.jsdelivr.net/gh/webedu/foundation@master/vendor/vue/vue.min.js" type="text/javascript"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/1.2.0/webcomponents-loader.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/webedu/npm@master/packages/c4u-main/dist/c4u-main.min.js" type="text/javascript"></script>
-<script src="https://cdn.jsdelivr.net/gh/webedu/npm@master/packages/w4u-main/dist/w4u-main.min.js" type="text/javascript"></script>
+
+<!-- script src="https://cdn.jsdelivr.net/gh/webedu/npm@master/packages/c4u-main/dist/c4u-main.min.js" type="text/javascript"></script -->
+<!-- script src="https://cdn.jsdelivr.net/gh/webedu/npm@master/packages/w4u-main/dist/w4u-main.min.js" type="text/javascript"></script -->
+<script src="../../preparation/web-components/c4u-main/sync/c4u-main.js"></script>
+<script src="../../preparation/web-components/w4u-main/sync/w4u-main.js"></script>
+
 <script src="https://cdn.jsdelivr.net/gh/webedu/foundation@master/vendor/bootstrap/bootstrap.bundle.min.js" type="text/javascript"></script>
 
-
-<div style="width: 100%">
 <c4u-pages>
-
 <c4u-page><c4u-html url='./pages/00_intro.html'></c4u-html></c4u-page>
 <c4u-page><c4u-html url='./pages/01_page.html'></c4u-html></c4u-page>
 <c4u-page><c4u-html url='./pages/02_page.html'></c4u-html></c4u-page>
 <c4u-page><c4u-html url='./pages/03_page.html'></c4u-html></c4u-page>
 
-<c4u-page-backward>B</c4u-page-backward>
-<c4u-page-forward>F</c4u-page-forward>
-<c4u-page-select></c4u-page-select>
-</c4u-pages>
-</div>
+<footer class="footer" style="position: absolute; bottom: 0; width: 100%">
+     <span class="float-left"><c4u-page-backward>B</c4u-page-backward></span>
+     <span class="float-right"><c4u-page-forward>F</c4u-page-forward></span>
+</footer>
 
+</c4u-pages>
 
  </body>
+
+
 </html>

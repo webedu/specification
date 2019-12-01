@@ -2,7 +2,7 @@
 
 var viewer = new PhotoSphereViewer({
   container: 'panorama',
-  panorama: '../img/panorama360.png',
+  panorama: './img/panorama360.png',
   time_anim: false,
   navbar: false,
   pano_data: {
